@@ -1,0 +1,130 @@
+/* src/components/ReservationSummary.css */
+.reservation-summary-container {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: left;
+}
+
+.reservation-summary-container h3 {
+  margin-top: 0;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.summary-details p {
+  margin: 8px 0;
+  color: #555;
+  font-size: 1.1em;
+}
+
+.summary-details strong {
+  color: #007bff;
+}
+
+/* src/components/ReservationSummary.css */
+.reservation-summary-container {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: left;
+}
+
+.reservation-summary-container h3 {
+  margin-top: 0;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.summary-details p {
+  margin: 8px 0;
+  color: #555;
+  font-size: 1.1em;
+}
+
+.summary-details strong {
+  color: #007bff;
+}
+
+.confirm-button { 
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin-top: 25px; 
+  font-family: inherit;
+  font-size: 1.1rem;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  border-radius: 500px;
+  overflow: hidden;
+  background: #66ff66; 
+  color: ghostwhite;
+  width: 100%; 
+  text-align: center; 
+}
+
+.confirm-button span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+
+.confirm-button:hover span {
+  color: #000; 
+}
+
+.confirm-button::before { 
+  content: "";
+  background: #007bff; 
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  position: absolute; 
+  top: 0;
+  height: 100%;
+  z-index: 0;
+}
+
+.confirm-button:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.confirm-button:disabled {
+  background-color: #cccccc; 
+  cursor: not-allowed;
+  color: #888; 
+}
+
+.confirm-button:disabled::before {
+  transform: skew(30deg); 
+  background: none; 
+}
+
+.confirm-button:disabled span {
+  color: #888; 
+}
+
+.success-message {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}

@@ -1,0 +1,58 @@
+/* src/components/TimeslotSelector.css */
+.timeslot-selector-container {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.timeslot-selector-container h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.timeslot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.timeslot-button {
+  padding: 10px 15px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  background-color: #e6f7ff;
+  color: #007bff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.timeslot-button:hover:not(:disabled) {
+  background-color: #007bff;
+  color: white;
+}
+
+.timeslot-button.selected {
+  background-color: #0056b3;
+  color: white;
+  border-color: #0056b3;
+  font-weight: bold;
+}
+
+.timeslot-button.unavailable {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  border-color: #ced4da;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.timeslot-button.unavailable:hover {
+  background-color: #f8f9fa; 
+  color: #6c757d;
+}

@@ -1,0 +1,37 @@
+/* src/index.css */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; /* Warna latar belakang default root */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Pastikan body dan #root mengisi seluruh viewport */
+body {
+  margin: 0; /* Hapus margin default pada body */
+  display: flex; /* Gunakan flexbox */
+  place-items: center;
+  min-width: 100vw; /* Pastikan lebar minimum 100% dari viewport width */
+  min-height: 100vh; /* Pastikan tinggi minimum 100% dari viewport height */
+  overflow-x: hidden; /* Mencegah scroll horizontal yang tidak diinginkan */
+  background-color: #f0f2f5; /* Warna latar belakang umum aplikasi Anda */
+}
+
+#root {
+  width: 100%; /* Pastikan root juga mengisi 100% lebar */
+  min-height: 100vh; /* Pastikan root mengisi 100% tinggi */
+  margin: 0; /* Hapus margin yang mungkin ada */
+  padding: 0; /* Hapus padding yang mungkin ada */
+  display: flex; /* Jadikan flex container untuk alignment App */
+  justify-content: center; /* Pusatkan konten App secara horizontal */
+  align-items: flex-start; /* Posisikan konten App di bagian atas (atau center) */
+  box-sizing: border-box; /* Sertakan padding dan border dalam lebar/tinggi */
+}

@@ -1,0 +1,49 @@
+.court-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  margin-top: 15px;
+  justify-items: center;
+  margin-bottom: 20px;
+}
+
+.court-card {
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  background-color: #fff;
+  position: relative;
+}
+
+.court-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.court-card:hover:not(.unavailable) .court-image {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .court-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.court-card.selected {
+  border-color: #28a745;
+  box-shadow: 0 0 0 3px #28a74533;
+  background-color: #f0fff4;
+}
+
+.court-card.selected:hover {
+  box-shadow: 0 0 10px #28a74588;
+  transform: translateY(-5px);
+}
